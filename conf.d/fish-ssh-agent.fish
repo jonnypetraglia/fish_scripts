@@ -1,3 +1,7 @@
+if test -z "$SSH_ENV"
+    set -xg SSH_ENV $HOME/.ssh/environment
+end
 
-ssh_agent_start_env
-ssh_agent_start
+if not __ssh_agent_is_started
+    __ssh_agent_start
+end

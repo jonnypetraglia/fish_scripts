@@ -12,3 +12,7 @@ set SFDX_REST_DEPLOY false
 function fish_greeting
     fortune
 end
+
+
+set SPACEFISH_PACKAGE_SHOW false
+set SPACEFISH_NODE_SHOW false
